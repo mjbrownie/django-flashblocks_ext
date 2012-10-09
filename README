@@ -11,3 +11,7 @@ django-flatblocks_ext - some additions to django-flatblocks
                     name='flatblocks-edit'),
         ...
     )
+
+    The flatblock will allow edits to a user in a group named in the prefix
+
+    {% flatblock <groupname>.somename %}
