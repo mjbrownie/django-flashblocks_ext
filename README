@@ -1,3 +1,13 @@
 django-flatblocks_ext - some additions to django-flatblocks
 
     - a Simple group based permission_check
+
+    from flatblocks_ext.permissions import group_slug_permisson_check
+
+    urlpatterns = patterns(
+        ...
+        url(r'^flatblocks/(?P<pk>\d+)/edit/$', edit,
+            {'permission_check': group_slug_permisson_check},
+                    name='flatblocks-edit'),
+        ...
+    )
