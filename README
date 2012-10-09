@@ -1,0 +1,3 @@
+django-flatblocks_ext - some additions to django-flatblocks
+
+    - a Simple group based permission_check
